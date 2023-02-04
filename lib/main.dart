@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice_statefullwidget/widgets/inceaseButton.dart';
+import 'package:flutter_practice_statefullwidget/widgets/buttonWithFunction.dart';
 
 void main() {
   runApp(const App());
@@ -62,19 +62,19 @@ class _AppState extends State<App> {
                     fontSize: 30,
                   ),
                 ),
-                IncreaseButton(
+                ButtonWithFunction(
                   title: "reset",
                   receivedFunction: onReset,
                 ),
-                IncreaseButton(
+                ButtonWithFunction(
                   title: "Force Render",
                   receivedFunction: onForcedRerender,
                 ),
-                IncreaseButton(
+                ButtonWithFunction(
                     title: "increase number",
                     subTitle: "don't render widgets",
                     receivedFunction: onJustIncreaseNum),
-                IncreaseButton(
+                ButtonWithFunction(
                     title: "increase number",
                     subTitle: "Rerender widgets",
                     receivedFunction: onRerenderAfterIncreaseNum),

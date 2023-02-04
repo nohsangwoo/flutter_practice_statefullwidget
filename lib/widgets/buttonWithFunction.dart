@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class IncreaseButton extends StatelessWidget {
+class ButtonWithFunction extends StatelessWidget {
   final String title;
   String subTitle;
   final dynamic receivedFunction;
 
-  IncreaseButton({
+  ButtonWithFunction({
     super.key,
     required this.title,
     this.subTitle = "",
